@@ -1,0 +1,5 @@
+*.py    text eol=lf
+*.md    text eol=lf
+*       text=auto
+
+*.{jpg,jpeg,png}    binary diff=exif
