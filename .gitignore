@@ -28,3 +28,4 @@ venv.bak/
 .idea/
 .vscode/
 proyecto-imagenes
+.ignored/

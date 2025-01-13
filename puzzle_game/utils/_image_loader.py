@@ -5,8 +5,7 @@ from typing import Union
 
 
 def load_image(src: Union[str, ndarray, MatLike]) -> MatLike:
-    if src is str:
-        output = cv2.imread(str)
+    if isinstance(src, str):
+        return cv2.imread(src, cv2.IMREAD_COLOR)
     else:
-        output = src
-    return output
+        return src

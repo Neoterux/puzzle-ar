@@ -6,6 +6,8 @@ from puzzle_game.core.processing.models import Segment, Position
 class SimpleSegmenter(ImageSegmenter):
 
     def segment_image(self, img, rows, cols):
+        if isinstance(img, str):
+            print(f"Loading image from {img}")
         image = load_image(img)
         segments = []
         imh = image.shape[0]
